@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Achievements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+
+    <div id="loadingDiv"></div>
+    <div id="container" class="page_achivements">
+
+        <div id="data">
+
+            <ul id="achievementsList">
+            </ul>
+
+        </div>
+        <!-- #data -->
+
+        <p id="close"><a href="#" onclick="(CocoonJS.WebDialog.close) ? CocoonJS.WebDialog.close() : Cocoon.Widget.WebDialog.close(); return false;">Close</a>
+        </p>
+
+    </div>
+    <!-- /#container -->
+
+    <script>
+    window.jQuery || document.write('<script src="jquery-1.8.3.min.js"><\/script>')
+    </script>
+    <script src="jquery.equalheights.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("#data li").wrapInner('<div class="wrap_item" />');
+    });
+
+    $(window).load(function() {
+        $("#data").equalHeights({
+            selector: '.wrap_item',
+            css_attr: 'min-height'
+        });
+    });
+
+    $(window).resize(function() {
+        $("#data .wrap_item").css('min-height', 0);
+        $("#data").equalHeights({
+            selector: '.wrap_item',
+            css_attr: 'min-height'
+        });
+    });
+    </script>
+
+    <script>
+    function initializeView() {
+        document.getElementById("achievementsList").innerHTML = '';
+    }
+
+    function addAchievements(achievements) {
+        var achievementsList = document.getElementById("achievementsList");
+        var loadingDiv = document.getElementById("loadingDiv");
+        loadingDiv.style.display = "none";
+
+        for (var i = 0; i < achievements.length; ++i) {
+            var achievement = achievements[i];
+            var newLI = document.createElement("li");
+            if (!achievement.achieved) {
+                newLI.setAttribute("class", "locked");
+                achievement.imageURL = "assets/images/achivement_locked.png";
+            }
+
+            var str = '<div class="image"><img src="' + achievement.imageURL + '" alt="' + (achievement.achieved ? '' : 'Locked') + '" /></div><div class="title"><span>' + achievement.title + '</span></div><div class="text">' + achievement.description + '</div><div class="goal">' + achievement.points + '</div>';
+            newLI.innerHTML = str;
+            achievementsList.appendChild(newLI);
+        }
+    }
+    </script>
+</body>
+
+</html>

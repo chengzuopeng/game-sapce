@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏集合 - 60个精彩小游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .game-card a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .game-card:hover a {
+            color: #667eea;
+        }
+
+        .game-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-right: 10px;
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .footer {
+            background: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .games-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 游戏集合</h1>
+            <p>60个精彩小游戏，总有一款适合您</p>
+        </div>
+
+        <div class="games-grid">
+            <div class="game-card">
+                <a href="/1-僵尸鸭猎手/index.html" target="_blank">
+                    <span class="game-number">1</span>僵尸鸭猎手
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/2-斯瓦特大战僵尸/index.html" target="_blank">
+                    <span class="game-number">2</span>斯瓦特大战僵尸
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/3-坦克大战/index.html" target="_blank">
+                    <span class="game-number">3</span>坦克大战
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/4-木乃伊糖果/index.html" target="_blank">
+                    <span class="game-number">4</span>木乃伊糖果
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/5-万圣节记忆/index.html" target="_blank">
+                    <span class="game-number">5</span>万圣节记忆
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/6-毁灭僵尸/index.html" target="_blank">
+                    <span class="game-number">6</span>毁灭僵尸
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/7-粘猴手机游戏/index.html" target="_blank">
+                    <span class="game-number">7</span>粘猴手机游戏
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/8-水暖工/index.html" target="_blank">
+                    <span class="game-number">8</span>水暖工
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/9-黄金矿工/index.html" target="_blank">
+                    <span class="game-number">9</span>黄金矿工
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/10-逃亡/index.html" target="_blank">
+                    <span class="game-number">10</span>逃亡
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/11-水果馅饼/index.html" target="_blank">
+                    <span class="game-number">11</span>水果馅饼
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/12-砌砖/index.html" target="_blank">
+                    <span class="game-number">12</span>砌砖
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/13-流浪者大战僵尸/index.html" target="_blank">
+                    <span class="game-number">13</span>流浪者大战僵尸
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/14-万圣节泡泡枪手/index.html" target="_blank">
+                    <span class="game-number">14</span>万圣节泡泡枪手
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/15-忍者冒险小游戏/index.html" target="_blank">
+                    <span class="game-number">15</span>忍者冒险小游戏
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/16-赌场卡记忆/index.html" target="_blank">
+                    <span class="game-number">16</span>赌场卡记忆
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/17-吃水果的蛇/index.html" target="_blank">
+                    <span class="game-number">17</span>吃水果的蛇
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/18-坦克防御兵/index.html" target="_blank">
+                    <span class="game-number">18</span>坦克防御兵
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/19-捕鱼狂/index.html" target="_blank">
+                    <span class="game-number">19</span>捕鱼狂
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/20-疯狂跑步者/index.html" target="_blank">
+                    <span class="game-number">20</span>疯狂跑步者
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/21-航天飞机/index.html" target="_blank">
+                    <span class="game-number">21</span>航天飞机
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/22-超级牛仔跑/index.html" target="_blank">
+                    <span class="game-number">22</span>超级牛仔跑
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/23-猎鸭者/index.html" target="_blank">
+                    <span class="game-number">23</span>猎鸭者
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/24-交通赛车/index.html" target="_blank">
+                    <span class="game-number">24</span>交通赛车
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/25-女孩打扮/index.html" target="_blank">
+                    <span class="game-number">25</span>女孩打扮
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/26-烛光超线/index.html" target="_blank">
+                    <span class="game-number">26</span>烛光超线
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/27-果冻3/index.html" target="_blank">
+                    <span class="game-number">27</span>果冻3
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/28-射击强盗/index.html" target="_blank">
+                    <span class="game-number">28</span>射击强盗
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/29-僵尸枪手/index.html" target="_blank">
+                    <span class="game-number">29</span>僵尸枪手
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/30-圣诞熊猫跑步/index.html" target="_blank">
+                    <span class="game-number">30</span>圣诞熊猫跑步
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/31-速度赛车/index.html" target="_blank">
+                    <span class="game-number">31</span>速度赛车
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/32-圣诞比赛/index.html" target="_blank">
+                    <span class="game-number">32</span>圣诞比赛
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/33-圣诞气球/index.html" target="_blank">
+                    <span class="game-number">33</span>圣诞气球
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/34-儿童真彩色/index.html" target="_blank">
+                    <span class="game-number">34</span>儿童真彩色
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/35-空战/index.html" target="_blank">
+                    <span class="game-number">35</span>空战
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/36-狂鲨任务/index.html" target="_blank">
+                    <span class="game-number">36</span>狂鲨任务
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/37-棍兵/index.html" target="_blank">
+                    <span class="game-number">37</span>棍兵
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/38-泡泡教授/index.html" target="_blank">
+                    <span class="game-number">38</span>泡泡教授
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/39-忍者游戏/index.html" target="_blank">
+                    <span class="game-number">39</span>忍者游戏
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/40-糖果比赛3/index.html" target="_blank">
+                    <span class="game-number">40</span>糖果比赛3
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/41-超彩色线/index.html" target="_blank">
+                    <span class="game-number">41</span>超彩色线
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/42-触球/index.html" target="_blank">
+                    <span class="game-number">42</span>触球
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/43-快骰子/index.html" target="_blank">
+                    <span class="game-number">43</span>快骰子
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/44-气球天堂/index.html" target="_blank">
+                    <span class="game-number">44</span>气球天堂
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/45-热珠宝/index.html" target="_blank">
+                    <span class="game-number">45</span>热珠宝
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/46-笑脸微笑小游戏/index.html" target="_blank">
+                    <span class="game-number">46</span>笑脸微笑小游戏
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/47-儿童数学游戏/index.html" target="_blank">
+                    <span class="game-number">47</span>儿童数学游戏
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/48-僵尸起义/index.html" target="_blank">
+                    <span class="game-number">48</span>僵尸起义
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/49-超级目标/index.html" target="_blank">
+                    <span class="game-number">49</span>超级目标
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/50-超级跑车拼图/index.html" target="_blank">
+                    <span class="game-number">50</span>超级跑车拼图
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/51-儿童纵横填字游戏/index.html" target="_blank">
+                    <span class="game-number">51</span>儿童纵横填字游戏
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/52-希塔洛契卡/index.html" target="_blank">
+                    <span class="game-number">52</span>希塔洛契卡
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/53-汽车物理学/index.html" target="_blank">
+                    <span class="game-number">53</span>汽车物理学
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/54-机器人X/index.html" target="_blank">
+                    <span class="game-number">54</span>机器人X
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/55-记忆游戏/index.html" target="_blank">
+                    <span class="game-number">55</span>记忆游戏
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/56-卡通糖果- MatCH3/index.html" target="_blank">
+                    <span class="game-number">56</span>卡通糖果- MatCH3
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/57-弹力球/index.html" target="_blank">
+                    <span class="game-number">57</span>弹力球
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/58-跳动弹跳/index.html" target="_blank">
+                    <span class="game-number">58</span>跳动弹跳
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/59-鱼类世界- MatCH3/index.html" target="_blank">
+                    <span class="game-number">59</span>鱼类世界- MatCH3
+                </a>
+            </div>
+            <div class="game-card">
+                <a href="/60-复活节记忆/index.html" target="_blank">
+                    <span class="game-number">60</span>复活节记忆
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🎮 享受游戏的乐趣，让生活更加精彩！</p>
+        </div>
+    </div>
+</body>
+</html>
